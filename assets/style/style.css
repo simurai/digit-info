@@ -18,3 +18,10 @@ body {
     margin: 0; /* Remove default margin */
     height: 100%;
 }
+
+
+/* Overrides */
+
+.Main .digit-TextArea {
+    vertical-align: middle;
+}
