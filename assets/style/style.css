@@ -6,11 +6,22 @@
 html {
     font-family: sans-serif;
     color: #333;
-    
     /* Prevent iOS text size adjust after orientation change, without disabling user zoom. */
     -webkit-text-size-adjust: 100%;
+    height: 100%;
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0; /* Remove default margin */
+    height: 100%;
+}
+
+
+/* Overrides */
+
+.Main .digit-TextArea {
+    vertical-align: middle;
 }
