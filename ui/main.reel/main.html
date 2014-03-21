@@ -39,16 +39,14 @@
             "prototype": "digit/ui/radio-button.reel",
             "properties": {
                 "element": {"#": "radio"},
-                "checked": false,
-                "radioButtonController": "radio"
+                "checked": false
             }
         },
         "radio2": {
             "prototype": "digit/ui/radio-button.reel",
             "properties": {
                 "element": {"#": "radio2"},
-                "checked": true,
-                "radioButtonController": "radio"
+                "checked": true
             }
         },
         "slider": {
@@ -80,8 +78,8 @@
 <body>
     <div data-montage-id="main" class="Main">
         <section>
-            <input type="radio" data-montage-id="radio">
-            <input type="radio" data-montage-id="radio2">
+            <input type="radio" name="radio" data-montage-id="radio">
+            <input type="radio" name="radio" data-montage-id="radio2">
             <input type="checkbox" data-montage-id="checkbox">
         </section>
         <section>
