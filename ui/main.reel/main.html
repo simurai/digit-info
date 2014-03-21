@@ -73,6 +73,7 @@
             "prototype": "digit/ui/text-area.reel",
             "properties": {
                 "element": {"#": "textArea"},
+                "placeholderValue": "Text Area",
                 "value": ""
             }
         },
@@ -80,23 +81,23 @@
             "prototype": "digit/ui/text-field.reel",
             "properties": {
                 "element": {"#": "textField"},
-                "placeholderValue": "Text"
+                "placeholderValue": "Text Field"
             }
         }
     }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" class="Main">
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
         <input type="radio" data-montage-id="radio">
         <input type="checkbox" data-montage-id="checkbox">
         <output data-montage-id="badge"></output>
         <button data-montage-id="button"></button>
         <input type="number" data-montage-id="number">
         <select data-montage-id="select">
-            <option value="">Select 1</option>
-            <option value="">Select 2</option>
-            <option value="">Select 3</option>
+            <option value="">
+                Select
+            </option>
         </select>
         <div data-montage-id="slider"></div>
         <input data-montage-id="textField" type="text">
