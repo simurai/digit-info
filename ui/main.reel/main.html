@@ -16,7 +16,6 @@
         "badge": {
             "prototype": "digit/ui/badge.reel",
             "properties": {
-                "element": {"#": "badge"},
                 "value": "8"
             }
         },
@@ -49,10 +48,11 @@
                 "checked": true
             }
         },
-        "toggleSwitch": {
-            "prototype": "digit/ui/toggle-switch.reel",
+        "radio2": {
+            "prototype": "digit/ui/radio-button.reel",
             "properties": {
-                "element": {"#": "toggleSwitch"}
+                "element": {"#": "radio2"},
+                "checked": true
             }
         },
         "slider": {
@@ -68,7 +68,6 @@
         "textArea": {
             "prototype": "digit/ui/text-area.reel",
             "properties": {
-                "element": {"#": "textArea"},
                 "placeholderValue": "Text Area"
             }
         },
@@ -78,29 +77,26 @@
                 "element": {"#": "textField"},
                 "placeholderValue": "Text Field"
             }
+        },
+        "toggleSwitch": {
+            "prototype": "digit/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "toggleSwitch"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" class="Main">
-        <section>
-            <input type="radio" data-montage-id="radio">
-            <input type="checkbox" data-montage-id="checkbox">
-            <output data-montage-id="badge"></output>
-        </section>
-        <section>
-            <button data-montage-id="button"></button>
-            <input type="number" data-montage-id="number">
-        </section>
-        <section>
-            <div data-montage-id="toggleSwitch"></div>
-            <div data-montage-id="slider"></div>
-        </section>
-        <section>
-            <input data-montage-id="textField" type="text">
-            <textarea data-montage-id="textArea"></textarea>
-        </section>
+        <input type="radio" data-montage-id="radio">
+        <input type="radio" data-montage-id="radio2">
+        <input type="checkbox" data-montage-id="checkbox">
+        <button data-montage-id="button"></button>
+        <input type="number" data-montage-id="number">
+        <select data-montage-id="toggleSwitch"></select>
+        <div data-montage-id="slider"></div>
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
