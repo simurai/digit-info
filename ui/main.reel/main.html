@@ -49,14 +49,10 @@
                 "checked": true
             }
         },
-        "select": {
-            "prototype": "digit/ui/select.reel",
+        "toggleSwitch": {
+            "prototype": "digit/ui/toggle-switch.reel",
             "properties": {
-                "element": {"#": "select"},
-                "content": null,
-                "multiSelect": false,
-                "value": null,
-                "values": null
+                "element": {"#": "toggleSwitch"}
             }
         },
         "slider": {
@@ -73,7 +69,6 @@
             "prototype": "digit/ui/text-area.reel",
             "properties": {
                 "element": {"#": "textArea"},
-                "placeholderValue": "Text Area",
                 "value": ""
             }
         },
@@ -81,24 +76,20 @@
             "prototype": "digit/ui/text-field.reel",
             "properties": {
                 "element": {"#": "textField"},
-                "placeholderValue": "Text Field"
+                "placeholderValue": "Text"
             }
         }
     }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main">
+    <div data-montage-id="main" class="Main">
         <input type="radio" data-montage-id="radio">
         <input type="checkbox" data-montage-id="checkbox">
         <output data-montage-id="badge"></output>
         <button data-montage-id="button"></button>
         <input type="number" data-montage-id="number">
-        <select data-montage-id="select">
-            <option value="">
-                Select
-            </option>
-        </select>
+        <select data-montage-id="toggleSwitch"></select>
         <div data-montage-id="slider"></div>
         <input data-montage-id="textField" type="text">
         <textarea data-montage-id="textArea"></textarea>
