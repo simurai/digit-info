@@ -16,7 +16,8 @@
         "badge": {
             "prototype": "digit/ui/badge.reel",
             "properties": {
-                "element": {"#": "badge"}
+                "element": {"#": "badge"},
+                "value": "8"
             }
         },
         "button": {
@@ -51,13 +52,11 @@
         "select": {
             "prototype": "digit/ui/select.reel",
             "properties": {
-                "element": {"#": "select"}
-            }
-        },
-        "toggleSwitch": {
-            "prototype": "digit/ui/toggle-switch.reel",
-            "properties": {
-                "element": {"#": "toggleSwitch"}
+                "element": {"#": "select"},
+                "content": null,
+                "multiSelect": false,
+                "value": null,
+                "values": null
             }
         },
         "slider": {
@@ -74,7 +73,7 @@
             "prototype": "digit/ui/text-area.reel",
             "properties": {
                 "element": {"#": "textArea"},
-                "value": "Text"
+                "value": ""
             }
         },
         "textField": {
@@ -88,7 +87,7 @@
     </script>
 </head>
 <body>
-    <div data-montage-id="main" class="Main">
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
         <input type="radio" data-montage-id="radio">
         <input type="checkbox" data-montage-id="checkbox">
         <output data-montage-id="badge"></output>
@@ -99,7 +98,6 @@
                 Select
             </option>
         </select>
-        <div data-montage-id="toggleSwitch"></div>
         <div data-montage-id="slider"></div>
         <input data-montage-id="textField" type="text">
         <textarea data-montage-id="textArea"></textarea>
