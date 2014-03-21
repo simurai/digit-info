@@ -12,15 +12,23 @@ html {
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0; /* Remove default margin */
     height: 100%;
 }
 
 
-/* Overrides */
+/* Page layout */
+
+.Main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+/* Digit Overrides */
 
 .Main .digit-TextArea {
     vertical-align: middle;
