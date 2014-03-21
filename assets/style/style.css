@@ -23,9 +23,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100%;
 }
 
+
+section {
+    margin: 20px;
+}
 
 
 /* Digit Overrides */
