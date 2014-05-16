@@ -15,6 +15,10 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     
+    _main: {
+        value: null
+    },
+    
     _color: {
         value: 0
     },
@@ -34,8 +38,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var hue = Math.round(this._color);
             var color = "hsl(" + hue + ",80%,60%)";
 
-            this.style.color = color;
-            this.style.fill = color;
+            this._main.style.color = color;
+            this._main.style.fill = color;
         }
     }
         
