@@ -19,12 +19,8 @@ body {
     font-size: 16px; /* Sizing of components */
 }
 
-section {
-    padding: .4rem
-}
-
 section > [class*="digit"] {
-    margin: .4rem
+    margin: 1rem
 }
 
 
@@ -41,21 +37,23 @@ section > [class*="digit"] {
 
 .Title {
     color: hsl(0, 0%, 30%);
-    font-size: 3em;
+    font-size: 48px;
     font-weight: 300;
-    margin-bottom: 2rem;
+    margin-bottom: .4em;
 }
 
 
 .Controls {
-    padding: 2rem;
-    margin-bottom: 5rem;
+    font-size: 16px;
+    padding: 2em;
+    margin-bottom: 5em;
     border-radius: 100em;
     border: 2px solid hsl(0, 0%, 90%);
 }
 
 .Footer {
-    margin-top: 5rem;
+    margin-top: 5em;
+    font-size: 16px;
     color: hsl(0, 0%, 60%);
 }
 
