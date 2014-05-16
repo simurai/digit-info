@@ -42,7 +42,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var hue = Math.round(this._color);
             var color = "hsl(" + hue + ",80%,60%)";
 
-            this._main.style.color = color;
+            this._root.style.color = color;
             this._main.style.fill = color;
         }
     }
