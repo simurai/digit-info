@@ -45,6 +45,10 @@ body {
     border: 2px solid hsl(0, 0%, 90%);
 }
 
+.Footer {
+    margin-top: 5rem;
+}
+
 
 section {
     padding: .4rem
