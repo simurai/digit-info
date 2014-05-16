@@ -50,6 +50,20 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             return this._size;
         }
     },
+    
+    _space: {
+        value: 0
+    },
+
+    space: {
+        set: function(value) {
+            this._space = value;
+            this.needsDraw = true;
+        },
+        get: function() {
+            return this._space;
+        }
+    },
 
     draw: {
         value: function() {
@@ -58,7 +72,9 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this._root.style.color = color;
             this._root.style.fill = color;
             
-            this._root.style.fontSize = this._size +"px";
+            this._body.style.fontSize = this._size +"px";
+            
+            this._root.style.fontSize = this._space +"px";
         }
     }
         
