@@ -53,6 +53,7 @@ section > [class*="digit"] {
     padding: 2em;
     margin-bottom: 5em;
     border-radius: 100em;
+    color: hsl(0, 0%, 60%);
     border: 2px solid hsl(0, 0%, 90%);
 }
 
