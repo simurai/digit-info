@@ -4,17 +4,30 @@
  */
 
 html {
-    font-family: sans-serif;
-    color: #333;
-    /* Prevent iOS text size adjust after orientation change, without disabling user zoom. */
-    -webkit-text-size-adjust: 100%;
+    font-family: Avenir, sans-serif;
     height: 100%;
+    
+    /* vars */
+    color: cornflowerblue;
+    font-size: 16px; /* Spacing of components */
 }
 
 body {
     margin: 0; /* Remove default margin */
     height: 100%;
+    
+    /* vars */
+    font-size: 16px; /* Sizing of components */
 }
+
+section {
+    padding: .5rem;
+}
+
+section > [class*="digit"] {
+    margin: .5rem;
+}
+
 
 
 /* Page layout */
@@ -27,14 +40,47 @@ body {
     height: 100%;
 }
 
-
-section {
-    margin: 20px;
+.Title {
+    color: hsl(0, 0%, 30%);
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: .4em;
 }
+
+
+.Controls {
+    font-size: 16px;
+    padding: 2em;
+    margin-bottom: 5em;
+    border-radius: 100em;
+    border: 2px solid hsl(0, 0%, 90%);
+}
+
+.Footer {
+    margin-top: 5em;
+    font-size: 16px;
+    color: hsl(0, 0%, 60%);
+}
+
+.Footer a {
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+}
+
+
 
 
 /* Digit Overrides */
 
-.Main .digit-TextArea {
+.Main .digit-Button {
+    font-family: inherit;
+}
+
+.Main .digit-TextField {
+    font-family: inherit;
+}
+
+.Main .digit-Slider {
     vertical-align: middle;
 }
+
