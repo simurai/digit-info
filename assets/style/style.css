@@ -38,6 +38,7 @@ section > [class*="digit"] {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    min-height: 800px;
 }
 
 .Title {
@@ -52,9 +53,13 @@ section > [class*="digit"] {
     font-size: 16px;
     padding: 1.5em;
     margin-bottom: 5em;
-    border-radius: 1em;
+    border-radius: .5em;
     color: hsl(0, 0%, 75%);
     border: 1px solid;
+}
+
+.Controls .digit-Slider {
+    margin: 0 1em;
 }
 
 .Footer {
