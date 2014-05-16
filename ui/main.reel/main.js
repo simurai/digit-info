@@ -15,6 +15,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     
+    _root: {
+        var root = document.querySelector("html");
+        value: root;
+    },
+    
     _main: {
         value: null
     },
