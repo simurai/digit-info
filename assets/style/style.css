@@ -19,6 +19,15 @@ body {
     font-size: 16px; /* Sizing of components */
 }
 
+section {
+    padding: .4rem
+}
+
+section > [class*="digit"] {
+    margin: .4rem
+}
+
+
 
 /* Page layout */
 
@@ -47,16 +56,15 @@ body {
 
 .Footer {
     margin-top: 5rem;
+    color: hsl(0, 0%, 60%);
+}
+
+.Footer a {
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
 }
 
 
-section {
-    padding: .4rem
-}
-
-section > [class*="digit"] {
-    margin: .4rem
-}
 
 
 /* Digit Overrides */
