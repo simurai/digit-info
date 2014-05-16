@@ -16,6 +16,7 @@ body {
     margin: 0; /* Remove default margin */
     height: 100%;
     
+    /* vars */
     font-size: 16px; /* Sizing of components */
 }
 
