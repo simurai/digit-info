@@ -65,7 +65,27 @@ section > [class*="digit"] {
     margin: 0 1em;
 }
 
+.Controls .digit-Slider:after {
+    content: "color";
+    position: absolute;
+    bottom: -1em;
+    font-size: 1.2em;
+    color: hsl(0, 0%, 30%);
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.Controls .digit-Slider:nth-child(1):after { content: "color"; }
+.Controls .digit-Slider:nth-child(2):after { content: "size"; }
+.Controls .digit-Slider:nth-child(3):after { content: "spacing"; }
+
+.Controls .digit-Slider:hover:after {
+    opacity: 1;
+}
+
 .Footer {
+    max-width: 400px;
     margin-top: 2rem;
     text-align: center;
     font-size: 16px;
