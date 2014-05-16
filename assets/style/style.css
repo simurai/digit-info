@@ -37,6 +37,13 @@ body {
     margin-bottom: 5rem;
 }
 
+
+.Controls {
+    padding: 2rem;
+    border: 2px solid hsl(0, 0%, 30%);
+}
+
+
 section {
     padding: .4rem
 }
