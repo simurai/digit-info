@@ -19,8 +19,12 @@ body {
     font-size: 16px; /* Sizing of components */
 }
 
+section {
+    padding: .5rem;
+}
+
 section > [class*="digit"] {
-    margin: 1rem
+    margin: .5rem;
 }
 
 
