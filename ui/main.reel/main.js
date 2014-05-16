@@ -58,7 +58,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this._root.style.color = color;
             this._root.style.fill = color;
             
-            this._root.style.fontSize = _size +"px";
+            this._root.style.fontSize = this._size +"px";
         }
     }
         
