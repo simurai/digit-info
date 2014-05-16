@@ -10,7 +10,13 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"}
+                "element": {"#": "main"},
+                "_main": {"#": "main"}
+            },
+            "bindings": {
+                "color": {"<-": "@slider2.value"},
+                "size": {"<-": "@slider3.value"},
+                "space": {"<-": "@slider4.value"}
             }
         },
         "button": {
@@ -59,6 +65,36 @@
                 "value": 50
             }
         },
+        "slider2": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider2"},
+                "axis": "vertical",
+                "max": "360",
+                "min": 0,
+                "value": "210"
+            }
+        },
+        "slider3": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider3"},
+                "axis": "vertical",
+                "max": "32",
+                "min": "6",
+                "value": "16"
+            }
+        },
+        "slider4": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider4"},
+                "axis": "vertical",
+                "max": "32",
+                "min": "6",
+                "value": "16"
+            }
+        },
         "textField": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
@@ -77,13 +113,14 @@
 </head>
 <body>
     <div data-montage-id="main" class="Main">
-        
-        <h1 class="Title">Digit Demo</h1>
-        
+        <h1 class="Title">
+            Digit Demo
+        </h1>
         <div class="Controls">
-            
+            <div data-montage-id="slider2"></div>
+            <div data-montage-id="slider3"></div>
+            <div data-montage-id="slider4"></div>
         </div>
-        
         <section>
             <input type="radio" name="radio" data-montage-id="radio">
             <input type="radio" name="radio" data-montage-id="radio2">
@@ -100,8 +137,14 @@
         <section>
             <input data-montage-id="textField" type="text">
         </section>
-        
-        <footer class="Footer">For more infos, see <a href="http://docs.montagestudio.com/montagejs/theme-digit-components.html">Digit Docs</a>.</footer>
+        <footer class="Footer">
+            <p>This is a demo showing how you can change color, size and spacing of the Digit components.</p>
+            <p>For more infos, see
+                <a href="http://docs.montagestudio.com/montagejs/theme-digit-components.html">
+                    Digit Docs
+                </a>.
+            </p>
+        </footer>
     </div>
 </body>
 </html>
