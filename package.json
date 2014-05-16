@@ -11,5 +11,12 @@
     "exclude": [
         "run-tests.html",
         "test"
-    ]
+    ],
+    "author": {
+        "name": "simurai",
+        "email": "",
+        "url": ""
+    },
+    "description": "Demo showing how you can change color, size and spacing of the Digit components.",
+    "homepage": "http://simurai.github.io/digit-demo"
 }
