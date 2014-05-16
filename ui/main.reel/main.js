@@ -19,8 +19,8 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: document.querySelector("html")
     },
     
-    _main: {
-        value: null
+    _body: {
+        value: document.querySelector("body")
     },
     
     _color: {
@@ -36,14 +36,29 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             return this._color;
         }
     },
+    
+    _size: {
+        value: 0
+    },
+
+    size: {
+        set: function(value) {
+            this._size = value;
+            this.needsDraw = true;
+        },
+        get: function() {
+            return this._size;
+        }
+    },
 
     draw: {
         value: function() {
             var hue = Math.round(this._color);
             var color = "hsl(" + hue + ",80%,60%)";
-
             this._root.style.color = color;
-            this._main.style.fill = color;
+            this._root.style.fill = color;
+            
+            this._root.style.fontSize = _size +"px";
         }
     }
         
