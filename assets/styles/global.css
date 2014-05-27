@@ -1,0 +1,83 @@
+/* 
+ * This file is reserved for your global style rules. 
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Avenir, sans-serif;
+    color: hsl(0, 0%, 60%);
+    font-size: 16px; /* Spacing of components */
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    text-align: center;
+    font-size: 16px; /* Sizing of components */
+    padding: 100px 0;
+}
+
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h1 {
+    color: hsl(0, 0%, 30%);
+    font-size: 48px;
+    line-height: 1;
+}
+
+h1 .Icon {
+    height: 2.4em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -.2em .5em 0 0;
+}
+
+
+
+section {
+    padding: .5rem;
+}
+
+section > [class*="digit"] {
+    margin: .5rem;
+}
+
+
+/* Loader -------------------------------------------- */
+
+.Loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+}
+.Loader-logo {
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    fill: #fff;
+}
+
+.Loader-path {
+    -webkit-animation: Loader--animate 1.2s cubic-bezier(1, 0, 1, 1) infinite alternate;
+            animation: Loader--animate 1.2s cubic-bezier(1, 0, 1, 1) infinite alternate;
+}
+
+.Loader-path--1 { opacity: 1.0;  -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
+.Loader-path--2 { opacity: 0.5;  -webkit-animation-delay: -0.4s; animation-delay: -0.4s; }
+.Loader-path--3 { opacity: 0.25; -webkit-animation-delay:    0s; animation-delay:    0s; }
+
+@-webkit-keyframes Loader--animate { 100% { opacity: .1; } }
+        @keyframes Loader--animate { 100% { opacity: .1; } }
+

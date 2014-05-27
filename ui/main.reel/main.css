@@ -1,3 +1,70 @@
-.Main {
-    
+
+
+.Controls {
+    position: relative;
+    font-size: 12px;
+    margin: 100px 0;
+    color: hsl(0, 0%, 70%);
+}
+
+.Controls .digit-Slider {
+    margin: 0 1em;
+}
+
+.Controls .digit-Slider:after {
+    content: "color";
+    position: absolute;
+    bottom: -2em;
+    font-size: 1.2em;
+    color: hsl(0, 0%, 30%);
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.Controls .digit-Slider:nth-child(1):after { content: "color"; }
+.Controls .digit-Slider:nth-child(2):after { content: "size"; }
+.Controls .digit-Slider:nth-child(3):after { content: "spacing"; }
+
+.Controls .digit-Slider:hover:after {
+    opacity: 1;
+}
+
+.Footer {
+    max-width: 400px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: hsl(0, 0%, 70%);
+}
+
+.Footer a {
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+}
+
+.Footer code {
+    color: hsl(210, 100%, 70%);
+}
+
+
+.Footer .Icon {
+    height: 5em;
+    margin-top: 2rem;
+}
+
+
+
+/* Digit Overrides */
+
+.Main .digit-Button {
+    font-family: inherit;
+}
+
+.Main .digit-TextField {
+    font-family: inherit;
+}
+
+.Main .digit-Slider {
+    vertical-align: middle;
 }
