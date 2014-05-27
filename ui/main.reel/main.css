@@ -40,11 +40,11 @@
 
 .Footer a {
     text-decoration: none;
-    color: hsl(0, 0%, 30%);
+    color: hsl(210, 100%, 70%);
 }
 
 .Footer code {
-    color: hsl(210, 100%, 70%);
+    color: hsl(0, 0%, 30%);
 }
 
 
