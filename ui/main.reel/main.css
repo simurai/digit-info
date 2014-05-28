@@ -3,8 +3,13 @@
 .Controls {
     position: relative;
     font-size: 12px;
-    margin: 100px 0;
+    margin: 40px 0;
     color: hsl(0, 0%, 70%);
+}
+@media (min-width: 600px) {
+    .Controls {
+        margin: 100px 0;
+    }
 }
 
 .Controls .digit-Slider {
@@ -32,10 +37,15 @@
 
 .Footer {
     max-width: 400px;
-    margin: 100px auto 0 auto;
+    margin: 40px auto 0 auto;
     text-align: center;
     font-size: 16px;
     color: hsl(0, 0%, 70%);
+}
+@media (min-width: 600px) {
+    .Footer {
+         margin: 100px auto 0 auto;
+    }
 }
 
 .Footer a {
