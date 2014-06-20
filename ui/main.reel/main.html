@@ -10,102 +10,13 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"},
-                "_main": {"#": "main"}
-            },
-            "bindings": {
-                "color": {"<-": "@slider2.value"},
-                "size": {"<-": "@slider3.value"},
-                "space": {"<-": "@slider4.value"}
+                "element": {"#": "main"}
             }
         },
-        "button": {
-            "prototype": "digit/ui/button.reel",
+        "demo": {
+            "prototype": "ui/demo.reel",
             "properties": {
-                "element": {"#": "button"},
-                "enabled": true,
-                "label": "Button"
-            }
-        },
-        "checkbox": {
-            "prototype": "digit/ui/checkbox.reel",
-            "properties": {
-                "element": {"#": "checkbox"},
-                "checked": true
-            }
-        },
-        "number": {
-            "prototype": "digit/ui/number-field.reel",
-            "properties": {
-                "element": {"#": "number"},
-                "value": 100
-            }
-        },
-        "radio": {
-            "prototype": "digit/ui/radio-button.reel",
-            "properties": {
-                "element": {"#": "radio"},
-                "checked": false
-            }
-        },
-        "radio2": {
-            "prototype": "digit/ui/radio-button.reel",
-            "properties": {
-                "element": {"#": "radio2"},
-                "checked": true
-            }
-        },
-        "slider": {
-            "prototype": "digit/ui/slider.reel",
-            "properties": {
-                "element": {"#": "slider"},
-                "axis": "horizontal",
-                "max": 100,
-                "min": 0,
-                "value": 50
-            }
-        },
-        "slider2": {
-            "prototype": "digit/ui/slider.reel",
-            "properties": {
-                "element": {"#": "slider2"},
-                "axis": "vertical",
-                "max": "360",
-                "min": 0,
-                "value": "210"
-            }
-        },
-        "slider3": {
-            "prototype": "digit/ui/slider.reel",
-            "properties": {
-                "element": {"#": "slider3"},
-                "axis": "vertical",
-                "max": "48",
-                "min": "6",
-                "value": "16"
-            }
-        },
-        "slider4": {
-            "prototype": "digit/ui/slider.reel",
-            "properties": {
-                "element": {"#": "slider4"},
-                "axis": "vertical",
-                "max": "48",
-                "min": "1",
-                "value": "16"
-            }
-        },
-        "textField": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "placeholderValue": "Text Field"
-            }
-        },
-        "toggleSwitch": {
-            "prototype": "digit/ui/toggle-switch.reel",
-            "properties": {
-                "element": {"#": "toggleSwitch"}
+                "element": {"#": "demo"}
             }
         }
     }
@@ -114,33 +25,14 @@
 <body>
     <div data-montage-id="main" class="Main">
         
-        <h1><img class="Icon" src="../../assets/images/digit-icon.svg"> Digit Demo</h1>
+        <header>
+            <h1><img class="Icon" src="../../assets/images/digit-icon.svg"> digit</h1>
+            <p>Digit is a <strong>UI Set</strong> for the <a href="https://github.com/montagejs">MontageJS</a> framework.</p>
+        </header>
         
-        <div class="Controls">
-            <div data-montage-id="slider2"></div>
-            <div data-montage-id="slider3"></div>
-            <div data-montage-id="slider4"></div>
-        </div>
-        
-        <section>
-            <input type="radio" name="radio" data-montage-id="radio">
-            <input type="radio" name="radio" data-montage-id="radio2">
-            <input type="checkbox" data-montage-id="checkbox">
-        </section>
-        <section>
-            <button data-montage-id="button"></button>
-            <input type="number" data-montage-id="number">
-        </section>
-        <section>
-            <select data-montage-id="toggleSwitch"></select>
-            <div data-montage-id="slider"></div>
-        </section>
-        <section>
-            <input data-montage-id="textField" type="text">
-        </section>
-        
+        <section data-montage-id="demo"></section>
+                
         <footer class="Footer">
-            <p>In this demo only <code>color</code> and <code>font-size</code> are changed. Making it easy to customize Digit components.</p>
             <p>For more infos, see <a href="http://docs.montagestudio.com/montagejs/theme-digit-components.html">Digit Docs</a>.</p>
             <a href="https://github.com/montagejs/digit"><img class="Icon" src="../../assets/images/digit-icon.svg"></a>
         </footer>

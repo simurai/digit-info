@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="demo.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "demo"}
+            }
+        },
+        
+        
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
+        "number": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "number"},
+                "value": 100
+            }
+        },
+        "radio": {
+            "prototype": "digit/ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "radio"},
+                "checked": false
+            }
+        },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
+            }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text Field"
+            }
+        },
+        "toggleSwitch": {
+            "prototype": "digit/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "toggleSwitch"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <section data-montage-id="demo" class="Demo">
+        <h2>Easy to customize</h2>
+        <p>Digit components can easily be customized by just changing the <code>color</code> and <code>font-size</code> CSS property. Either on a single component or when used on any parent element, all components at once. Try it below:</p>
+        
+        
+        <pre><style class="Demo-style" contenteditable spellcheck="false" style="display: block;">.Components {
+    font-size: 16px;
+    color: cornflowerblue;
+}</style></pre>
+        
+        <div data-montage-id="components" class="Components">
+            <div class="Components-group">
+                <input type="radio" name="radio" data-montage-id="radio">
+                <input type="checkbox" data-montage-id="checkbox">
+            </div>
+            <div class="Components-group">
+                <button data-montage-id="button"></button>
+                <input type="number" data-montage-id="number">
+            </div>
+            <div class="Components-group">
+                <select data-montage-id="toggleSwitch"></select>
+                <div data-montage-id="slider"></div>
+            </div>
+            <div class="Components-group">
+                <input data-montage-id="textField" type="text">
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

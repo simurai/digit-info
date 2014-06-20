@@ -8,7 +8,7 @@
 
 html {
     font-family: Avenir, sans-serif;
-    color: hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 50%);
     font-size: 16px; /* Spacing of components */
 }
 
@@ -24,7 +24,10 @@ body {
     }
 }
 
-
+a {
+    text-decoration: none;
+    color: hsl(210, 70%, 50%);
+}
 
 h1,
 h2,
@@ -32,33 +35,51 @@ h3 {
     font-weight: 300;
 }
 
-h1 {
+p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+code {
     color: hsl(0, 0%, 30%);
-    font-size: 8vw;
+}
+
+strong {
+    font-weight: normal;
+    color: hsl(0, 0%, 30%);
+}
+
+
+/* Logo -------------------------------------------- */
+
+h1 {
+    color: hsl(219, 50%, 36%);
     line-height: 1;
+    font-size: 12vw;
+    font-weight: 400;
+    font-family: 'Advent Pro', sans-serif;
 }
 @media (min-width: 600px) {
     h1 {
-        font-size: 48px;
+        font-size: 72px;
     }
 }
 
 h1 .Icon {
-    height: 2.4em;
+    height: 1.2em;
     display: inline-block;
     vertical-align: middle;
-    margin: -.2em .5em 0 0;
+    margin: -0.1em .1em 0 0;
 }
 
 
+/* Sections -------------------------------------------- */
 
 section {
-    padding: .5rem;
+    margin: 8rem;
 }
 
-section > [class*="digit"] {
-    margin: .5rem;
-}
 
 
 /* Loader -------------------------------------------- */

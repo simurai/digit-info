@@ -1,0 +1,68 @@
+
+
+/* Controls ------------------------- */
+
+.Demo-style {
+    position: relative;
+    max-width: 320px;
+    margin: 2em auto;
+    text-align: left;
+    line-height: 1.8;
+    color: hsla(0, 100%, 0%, 0.6);
+    border-radius: 8px;
+    padding: 1em;
+    background: hsl(219, 79%, 94%);
+    transition: background .2s;
+}
+
+.Demo-style:hover {
+    outline: none;
+    background: hsl(219, 79%, 92%);
+}
+
+.Demo-style:focus {
+    outline: none;
+    color: white;
+    background: cornflowerblue;
+}
+
+
+.Demo-style:after {
+    content: "";
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    margin: .6em 0 -.6em -.6em;
+    left: 50%;
+    bottom: 0;
+    background: inherit;
+    border-bottom-right-radius: 2px;
+    transform: rotate(45deg);
+}
+
+
+
+/* Group ------------------------- */
+
+.Components-group {
+    padding: .5rem;
+}
+
+.Components-group > [class*="digit"] {
+    margin: .5rem;
+}
+
+
+/* Digit Overrides ------------------------- */
+
+.digit-Button.digit-Button {
+    font-family: inherit;
+}
+
+.digit-TextField.digit-TextField {
+    font-family: inherit;
+}
+
+.digit-Slider.digit-Slider {
+    vertical-align: middle;
+}

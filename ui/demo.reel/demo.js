@@ -1,16 +1,16 @@
 /**
- * @module ui/main.reel
+ * @module ui/demo.reel
  * @requires montage/ui/component
  */
 var Component = require("montage/ui/component").Component;
 
 /**
- * @class Main
+ * @class Demo
  * @extends Component
  */
-exports.Main = Component.specialize(/** @lends Main# */ {
+exports.Demo = Component.specialize(/** @lends Demo# */ {
     constructor: {
-        value: function Main() {
+        value: function Demo() {
             this.super();
         }
     }
