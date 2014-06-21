@@ -11,19 +11,18 @@
     color: hsla(0, 100%, 0%, 0.6);
     border-radius: 8px;
     padding: 1em;
-    background: hsl(219, 79%, 94%);
+    outline: none;
+    color: white;
+    background: hsl(219, 79%, 66%);
     transition: background .2s;
 }
 
 .Demo-style:hover {
-    outline: none;
-    background: hsl(219, 79%, 92%);
+    background: hsl(219, 79%, 72%);
 }
 
 .Demo-style:focus {
-    outline: none;
-    color: white;
-    background: cornflowerblue;
+    background: hsl(219, 79%, 60%);
 }
 
 
@@ -38,31 +37,4 @@
     background: inherit;
     border-bottom-right-radius: 2px;
     transform: rotate(45deg);
-}
-
-
-
-/* Group ------------------------- */
-
-.Components-group {
-    padding: .5rem;
-}
-
-.Components-group > [class*="digit"] {
-    margin: .5rem;
-}
-
-
-/* Digit Overrides ------------------------- */
-
-.digit-Button.digit-Button {
-    font-family: inherit;
-}
-
-.digit-TextField.digit-TextField {
-    font-family: inherit;
-}
-
-.digit-Slider.digit-Slider {
-    vertical-align: middle;
 }

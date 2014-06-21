@@ -71,15 +71,20 @@
 <body>
     <section data-montage-id="demo" class="Demo">
         <h2>Easy to customize</h2>
-        <p>Digit components can easily be customized by just changing the <code>color</code> and <code>font-size</code> CSS property. Either on a single component or when used on any parent element, all components at once. Try it below:</p>
+        <p class="u-left">Digit components can easily be customized by just changing the <code>color</code> and <code>font-size</code> CSS property. Either on a single component or when used on any parent element, all components at once. Try it below:</p>
         
         
         <pre><style class="Demo-style" contenteditable spellcheck="false" style="display: block;">.Components {
     font-size: 16px;
     color: cornflowerblue;
+}
+
+.Toggle {
+    font-size: 14px;
+    color: coral;
 }</style></pre>
         
-        <div data-montage-id="components" class="Components">
+        <div class="Components">
             <div class="Components-group">
                 <input type="radio" name="radio" data-montage-id="radio">
                 <input type="checkbox" data-montage-id="checkbox">
@@ -89,7 +94,7 @@
                 <input type="number" data-montage-id="number">
             </div>
             <div class="Components-group">
-                <select data-montage-id="toggleSwitch"></select>
+                <select class="Toggle" data-montage-id="toggleSwitch"></select>
                 <div data-montage-id="slider"></div>
             </div>
             <div class="Components-group">

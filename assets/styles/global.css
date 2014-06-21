@@ -29,13 +29,18 @@ a {
     color: hsl(210, 70%, 50%);
 }
 
-h1,
-h2,
-h3 {
-    font-weight: 300;
+p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p {
+img {
+    max-width: 100%;
+}
+
+pre {
+    text-align: left;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -51,6 +56,20 @@ strong {
 }
 
 
+h1,
+h2,
+h3 {
+    color: hsl(219, 50%, 36%);
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 4vw;
+}
+@media (min-width: 600px) { h2 { font-size: 36px; } }
+
+
+
 /* Logo -------------------------------------------- */
 
 h1 {
@@ -60,11 +79,7 @@ h1 {
     font-weight: 400;
     font-family: 'Advent Pro', sans-serif;
 }
-@media (min-width: 600px) {
-    h1 {
-        font-size: 72px;
-    }
-}
+@media (min-width: 600px) { h1 { font-size: 72px; } }
 
 h1 .Icon {
     height: 1.2em;
@@ -74,11 +89,56 @@ h1 .Icon {
 }
 
 
+/* Utils -------------------------------------------- */
+
+.u-left {
+    text-align: left;
+}
+
+
+/* Components -------------------------------------------- */
+
+.Components > [class*="digit"],
+.Components-group > [class*="digit"] {
+    margin: .5rem;
+}
+
+.Components-group {
+    padding: .5rem;
+}
+
+.Components.Components--original {
+    font-size: 16px;
+    color: cornflowerblue;
+}
+
+
+
+/* Digit Overrides ------------------------- */
+
+.digit-Button.digit-Button {
+    font-family: inherit;
+}
+
+.digit-TextField.digit-TextField {
+    font-family: inherit;
+}
+
+.digit-Slider.digit-Slider {
+    vertical-align: middle;
+}
+
+
+
 /* Sections -------------------------------------------- */
 
 section {
     margin: 8rem;
 }
+
+
+
+
 
 
 

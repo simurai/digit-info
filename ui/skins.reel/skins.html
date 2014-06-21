@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Skins</title>
+    <link rel="stylesheet" href="skins.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "skins"},
+                "_select": {"#": "select"}
+            }
+        },
+                
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
+            }
+        },
+        "toggleSwitch": {
+            "prototype": "digit/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "toggleSwitch"}
+            }
+        }
+        
+    }
+    </script>
+</head>
+<body>
+    <section data-montage-id="skins" class="Skins">
+        <h2>Comes with 4 skins</h2>
+        <p class="u-left">In addition to the <strong>default</strong> skin, Digit also offers 3 more skins to chose from: <strong>wireframe</strong>, <strong>light</strong> and <strong>dark</strong>. Just add an <code>data-montage-skin</code> attribute and all children will be skinned.</p>
+        
+        <p><img src="skins.png" alt="Digit skins"></p>
+        
+        <pre class="Skins-picker">&lt;div <strong>data-montage-skin</strong>="<select data-montage-id="select">
+                <option>default</option>
+                <option>wireframe</option>
+                <option selected>light</option>
+                <option>dark</option>
+            </select>"&gt;</pre>
+        <div data-montage-skin="light" class="Components Components--original" id="skins">
+            <button data-montage-id="button"></button>
+            <select data-montage-id="toggleSwitch"></select data-montage-id="select">
+            <div data-montage-id="slider"></div>
+        </div>
+        <pre>&lt;/div&gt;</pre>
+        
+    </section>
+</body>
+</html>
