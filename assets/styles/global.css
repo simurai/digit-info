@@ -57,8 +57,7 @@ strong {
 
 
 h1,
-h2,
-h3 {
+h2 {
     color: hsl(219, 50%, 36%);
     font-weight: 300;
 }
@@ -68,6 +67,10 @@ h2 {
 }
 @media (min-width: 600px) { h2 { font-size: 36px; } }
 
+h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
 
 
 /* Logo -------------------------------------------- */
