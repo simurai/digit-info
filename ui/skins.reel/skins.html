@@ -8,33 +8,26 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "skins"},
-                "_select": {"#": "select"}
+                "element": {"#": "skins"}
             }
         },
                 
-        "button": {
-            "prototype": "digit/ui/button.reel",
+        "wireframe": {
+            "prototype": "ui/components.reel",
             "properties": {
-                "element": {"#": "button"},
-                "enabled": true,
-                "label": "Button"
+                "element": {"#": "wireframe"}
             }
         },
-        "slider": {
-            "prototype": "digit/ui/slider.reel",
+        "light": {
+            "prototype": "ui/components.reel",
             "properties": {
-                "element": {"#": "slider"},
-                "axis": "horizontal",
-                "max": 100,
-                "min": 0,
-                "value": 50
+                "element": {"#": "light"}
             }
         },
-        "toggleSwitch": {
-            "prototype": "digit/ui/toggle-switch.reel",
+        "dark": {
+            "prototype": "ui/components.reel",
             "properties": {
-                "element": {"#": "toggleSwitch"}
+                "element": {"#": "dark"}
             }
         }
         
@@ -43,23 +36,17 @@
 </head>
 <body>
     <section data-montage-id="skins" class="Skins">
-        <h2>Comes with 4 skins</h2>
-        <p class="u-left">In addition to the <strong>default</strong> skin, Digit also offers 3 more skins to chose from: <strong>wireframe</strong>, <strong>light</strong> and <strong>dark</strong>. Just add an <code>data-montage-skin</code> attribute and all children will be skinned.</p>
+        <h2>Comes with 3 extra skins</h2>
+        <p class="u-left">In addition to the <strong>default</strong> skin, Digit also offers 3 more skins to chose from: <strong>wireframe</strong>, <strong>light</strong> and <strong>dark</strong>. It can be set by using a data-montage-skin attribute. E.g. <code>data-montage-skin="light"</code> and all children will have the light skin applied.</p>
         
-        <p><img src="skins.png" alt="Digit skins"></p>
+        <h3 class="Skins-title">wireframe</h3>
+        <div data-montage-skin="wireframe" data-montage-id="wireframe" class="Components--original"></div>
         
-        <pre class="Skins-picker">&lt;div <strong>data-montage-skin</strong>="<select data-montage-id="select">
-                <option>default</option>
-                <option>wireframe</option>
-                <option selected>light</option>
-                <option>dark</option>
-            </select>"&gt;</pre>
-        <div data-montage-skin="light" class="Components Components--original" id="skins">
-            <button data-montage-id="button"></button>
-            <select data-montage-id="toggleSwitch"></select data-montage-id="select">
-            <div data-montage-id="slider"></div>
-        </div>
-        <pre>&lt;/div&gt;</pre>
+        <h3 class="Skins-title">light</h3>
+        <div data-montage-skin="light" data-montage-id="light" class="Components--original"></div>
+        
+        <h3 class="Skins-title">dark</h3>
+        <div data-montage-skin="dark" data-montage-id="dark" class="Components--original"></div>
         
     </section>
 </body>

@@ -5,3 +5,13 @@
 .Skins-picker {
     margin-top: 2em;
 }
+
+.Skins-title {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid hsl(0, 0%, 90%);
+    padding-top: 0.5em;
+    margin-top: 4rem;
+    text-align: left;
+}

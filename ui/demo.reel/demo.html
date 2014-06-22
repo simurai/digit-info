@@ -11,58 +11,10 @@
                 "element": {"#": "demo"}
             }
         },
-        
-        
-        "button": {
-            "prototype": "digit/ui/button.reel",
+        "components": {
+            "prototype": "ui/components.reel",
             "properties": {
-                "element": {"#": "button"},
-                "enabled": true,
-                "label": "Button"
-            }
-        },
-        "checkbox": {
-            "prototype": "digit/ui/checkbox.reel",
-            "properties": {
-                "element": {"#": "checkbox"},
-                "checked": true
-            }
-        },
-        "number": {
-            "prototype": "digit/ui/number-field.reel",
-            "properties": {
-                "element": {"#": "number"},
-                "value": 100
-            }
-        },
-        "radio": {
-            "prototype": "digit/ui/radio-button.reel",
-            "properties": {
-                "element": {"#": "radio"},
-                "checked": false
-            }
-        },
-        "slider": {
-            "prototype": "digit/ui/slider.reel",
-            "properties": {
-                "element": {"#": "slider"},
-                "axis": "horizontal",
-                "max": 100,
-                "min": 0,
-                "value": 50
-            }
-        },
-        "textField": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "placeholderValue": "Text Field"
-            }
-        },
-        "toggleSwitch": {
-            "prototype": "digit/ui/toggle-switch.reel",
-            "properties": {
-                "element": {"#": "toggleSwitch"}
+                "element": {"#": "components"}
             }
         }
     }
@@ -84,23 +36,7 @@
     color: coral;
 }</style></pre>
         
-        <div class="Components">
-            <div class="Components-group">
-                <input type="radio" name="radio" data-montage-id="radio">
-                <input type="checkbox" data-montage-id="checkbox">
-            </div>
-            <div class="Components-group">
-                <button data-montage-id="button"></button>
-                <input type="number" data-montage-id="number">
-            </div>
-            <div class="Components-group">
-                <select class="Toggle" data-montage-id="toggleSwitch"></select>
-                <div data-montage-id="slider"></div>
-            </div>
-            <div class="Components-group">
-                <input data-montage-id="textField" type="text">
-            </div>
-        </div>
+        <div data-montage-id="components"></div>
         
     </section>
 </body>
