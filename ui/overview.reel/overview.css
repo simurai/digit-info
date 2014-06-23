@@ -54,3 +54,22 @@ td:nth-child(5) { background: hsl(0,0%,24%); }
 
 .layout td:nth-child(4) { background: hsl(0,0%,70%); }
 .layout td:nth-child(5) { background: hsl(0,0%,40%); }
+
+
+
+/* Responsive cheat ------------------------- */
+
+@media (max-width: 920px) {
+    /* Remove wireframe */
+    td:nth-child(3), th:nth-child(3) { display: none; }
+}
+
+@media (max-width: 720px) {
+    /* Remove light + dark */
+    td:nth-child(4), th:nth-child(4) { display: none; }
+    td:nth-child(5), th:nth-child(5) { display: none; }
+    
+    td:nth-child(2) {
+        border-right: 1px solid hsla(0, 0%, 0%, 0.06);
+    }
+}

@@ -18,9 +18,16 @@ body {
     font-size: 16px; /* Sizing of components */
     padding: 20px 10px;
 }
+
+@media (min-width: 400px) {
+    body {
+        padding: 40px 20px;
+    }
+}
+
 @media (min-width: 600px) {
     body {
-        padding: 100px 20px;
+        padding: 100px 0;
     }
 }
 
@@ -136,7 +143,7 @@ h1 .Icon {
 /* Sections -------------------------------------------- */
 
 section {
-    margin: 8rem;
+    margin: 8rem 0;
 }
 
 
