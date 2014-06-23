@@ -1,17 +1,40 @@
 
 
+.Header {
+    background: hsl(219, 16%, 24%);
+    padding: 20px;
+    color: hsl(219, 16%, 74%);
+}
+@media (min-width: 760px) {
+    .Header {
+        padding: 8rem 0;
+    }
+}
+
+.Header a {
+    color: hsl(219, 79%, 96%);
+}
+
+.Header-title {
+    color: inherit;
+    font-size: 1.6em;
+}
+
+
 .Footer {
-    max-width: 400px;
+    max-width: 720px;
     margin: 0 auto;
     text-align: center;
+    padding: 0 20px;
 }
-@media (min-width: 600px) {
+@media (min-width: 760px) {
     .Footer {
+        padding: 0;
     }
 }
 
 
 .Footer .Icon {
     height: 4em;
-    margin-top: 2rem;
+    margin: 2rem 0 8rem 0;
 }

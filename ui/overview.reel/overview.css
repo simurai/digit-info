@@ -17,6 +17,7 @@ table {
     width: 100%;
     margin: 3rem auto;
     padding: 0;
+    font-size: initial;
     list-style: none;
     border-spacing: 0;
     border-bottom: 1px solid hsla(0,0%,0%,.1);

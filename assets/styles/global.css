@@ -16,19 +16,13 @@ body {
     margin: 0; /* Remove default margin */
     text-align: center;
     font-size: 16px; /* Sizing of components */
-    padding: 20px 10px;
 }
-
-@media (min-width: 400px) {
+@media (min-width: 760px) {
     body {
-        padding: 40px 20px;
-    }
+        font-size: 1.2em;
+    
+        line-height: 1.6;
 }
-
-@media (min-width: 600px) {
-    body {
-        padding: 100px 0;
-    }
 }
 
 a {
@@ -37,7 +31,7 @@ a {
 }
 
 p {
-    max-width: 500px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,9 +64,10 @@ h2 {
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 5vw;
 }
-@media (min-width: 600px) { h2 { font-size: 36px; } }
+@media (min-width: 760px) { h2 { font-size: 36px; } }
+@media (max-width: 400px) { h2 { font-size: 20px; } }
 
 h3 {
     font-size: 1.2em;
@@ -83,13 +78,14 @@ h3 {
 /* Logo -------------------------------------------- */
 
 h1 {
-    color: hsl(219, 50%, 36%);
+    color: hsl(219, 79%, 96%);
     line-height: 1;
     font-size: 12vw;
     font-weight: 400;
     font-family: 'Advent Pro', sans-serif;
+    margin-top: 1rem;
 }
-@media (min-width: 600px) { h1 { font-size: 72px; } }
+@media (min-width: 760px) { h1 { font-size: 72px; } }
 
 h1 .Icon {
     height: 1.2em;
@@ -144,9 +140,19 @@ h1 .Icon {
 
 section {
     margin: 8rem 0;
+    padding: 0 10px;
 }
 
-
+@media (min-width: 400px) {
+    section {
+        padding: 0 20px;
+    }
+}
+@media (min-width: 760px) {
+    section {
+        padding: 0;
+    }
+}
 
 
 
