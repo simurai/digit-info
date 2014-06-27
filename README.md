@@ -1,7 +1,7 @@
-# Digit Demo
+# Digit Info
 
-This is a demo showing how you can change `color`, `size` and `spacing` of the Digit components.
+This is an unofficial fan page for the [Digit UI Set](https://github.com/montagejs/digit).
 
 ![Screenshot](assets/images/screenshot.png)
 
-### See Demo: [simurai.github.io/digit-demo](http://simurai.github.io/digit-demo)
+### Visit: [simurai.github.io/digit-info](http://simurai.github.io/digit-info)
