@@ -3,8 +3,8 @@
 /* Demo ------------------------- */
 
 .Demo {
-    color: coral;
-    padding: .5rem;
+    font-size: 16px;
+    padding: 1rem;
 }
 
 @media (min-width: 760px) {
@@ -23,7 +23,7 @@
 }
 
 .Demo > [class*="digit"] {
-    margin: .5rem;
+    margin: 1rem;
 }
 
 .Demo > [class*="digit"]:nth-child(1) { color: mediumspringgreen; }
