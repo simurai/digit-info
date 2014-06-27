@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Custom</title>
+    <link rel="stylesheet" href="custom.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "custom"}
+            }
+        },
+        "components": {
+            "prototype": "ui/components.reel",
+            "properties": {
+                "element": {"#": "components"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <section data-montage-id="custom" class="Custom">
+        <h2>Easy to customize</h2>
+        <p class="u-left">Digit components can easily be customized by just changing the <code>color</code> and <code>font-size</code> CSS property. Either on a single component or all at once when used on any parent element. Try it below:</p>
+        
+        
+        <pre><style class="Custom-style" contenteditable spellcheck="false" style="display: block;">.Components {
+    font-size: 16px;
+    color: cornflowerblue;
+}
+
+.Toggle {
+    font-size: 14px;
+    color: coral;
+}</style></pre>
+        
+        <div data-montage-id="components"></div>
+        
+    </section>
+</body>
+</html>
