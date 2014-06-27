@@ -67,7 +67,7 @@ h2 {
     font-size: 5vw;
 }
 @media (min-width: 760px) { h2 { font-size: 36px; } }
-@media (max-width: 400px) { h2 { font-size: 20px; } }
+@media (max-width: 400px) { h2 { font-size: 24px; } }
 
 h3 {
     font-size: 1.2em;
@@ -139,17 +139,19 @@ h1 .Icon {
 /* Sections -------------------------------------------- */
 
 section {
-    margin: 8rem 0;
+    margin: 4rem 0;
     padding: 0 10px;
 }
 
 @media (min-width: 400px) {
     section {
+        margin: 8rem 0;
         padding: 0 20px;
     }
 }
 @media (min-width: 760px) {
     section {
+        margin: 12rem 0;
         padding: 0;
     }
 }
