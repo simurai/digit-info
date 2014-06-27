@@ -37,5 +37,6 @@
     bottom: 0;
     background: inherit;
     border-bottom-right-radius: 2px;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
