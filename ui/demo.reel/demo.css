@@ -1,42 +1,32 @@
 
 
-/* Controls ------------------------- */
+/* Demo ------------------------- */
 
-.Demo-style {
-    position: relative;
-    max-width: 320px;
-    margin: 3rem auto;
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.8;
-    color: hsla(0, 100%, 0%, 0.6);
-    border-radius: 8px;
-    padding: 1em;
-    outline: none;
-    color: white;
-    background: hsl(219, 79%, 66%);
-    transition: background .2s;
+.Demo {
+    color: coral;
+    padding: .5rem;
 }
 
-.Demo-style:hover {
-    background: hsl(219, 79%, 72%);
+@media (min-width: 760px) {
+    .Demo {
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
 }
 
-.Demo-style:focus {
-    background: hsl(219, 79%, 60%);
+.Demo > .digit-Checkbox {
+    fill: inherit;
 }
 
-
-.Demo-style:after {
-    content: "";
-    position: absolute;
-    width: 1.2em;
-    height: 1.2em;
-    margin: .6em 0 -.6em -.6em;
-    left: 50%;
-    bottom: 0;
-    background: inherit;
-    border-bottom-right-radius: 2px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+.Demo .montage-ToggleSwitch--checked > .digit-ToggleSwitch-thumb {
+    background-color: hsl(219, 16%, 24%);
 }
+
+.Demo > [class*="digit"] {
+    margin: .5rem;
+}
+
+.Demo > [class*="digit"]:nth-child(1) { color: mediumspringgreen; }
+.Demo > [class*="digit"]:nth-child(2) { color: coral; }
+.Demo > [class*="digit"]:nth-child(3) { color: deepskyblue; }
+.Demo > [class*="digit"]:nth-child(4) { color: hotpink; }

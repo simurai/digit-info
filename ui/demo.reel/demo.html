@@ -11,33 +11,49 @@
                 "element": {"#": "demo"}
             }
         },
-        "components": {
-            "prototype": "ui/components.reel",
+        
+        "button": {
+            "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "components"}
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
+            }
+        },
+        "toggleSwitch": {
+            "prototype": "digit/ui/toggle-switch.reel",
+            "properties": {
+                "element": {"#": "toggleSwitch"}
             }
         }
     }
     </script>
 </head>
 <body>
-    <section data-montage-id="demo" class="Demo">
-        <h2>Easy to customize</h2>
-        <p class="u-left">Digit components can easily be customized by just changing the <code>color</code> and <code>font-size</code> CSS property. Either on a single component or all at once when used on any parent element. Try it below:</p>
+    <p data-montage-id="demo" class="Demo">
         
+        <input data-montage-id="checkbox" type="checkbox">
+        <select data-montage-id="toggleSwitch"></select>
+        <button data-montage-id="button"></button>
+        <input data-montage-id="slider" type="range">
         
-        <pre><style class="Demo-style" contenteditable spellcheck="false" style="display: block;">.Components {
-    font-size: 16px;
-    color: cornflowerblue;
-}
-
-.Toggle {
-    font-size: 14px;
-    color: coral;
-}</style></pre>
-        
-        <div data-montage-id="components"></div>
-        
-    </section>
+    </p>
 </body>
 </html>
