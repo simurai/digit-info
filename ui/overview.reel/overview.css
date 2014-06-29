@@ -1,10 +1,6 @@
 
 /* Overview ------------------------- */
 
-.Overview {
-    
-}
-
 .Overview .hl {
     color: cornflowerblue;
 }
@@ -15,6 +11,7 @@
 
 table {
     width: 100%;
+    max-width: 800px;
     margin: 3rem auto;
     padding: 0;
     font-size: initial;
