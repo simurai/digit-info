@@ -71,3 +71,18 @@ td:nth-child(5) { background: hsl(0,0%,24%); }
         border-right: 1px solid hsla(0, 0%, 0%, 0.06);
     }
 }
+
+
+/* Digit fixes ------------------------- */
+
+.digit-Badge.digit-Badge {
+    font-weight: 600;
+}
+
+.digit-Button.digit-Button {
+    line-height: 1;
+}
+
+.digit-Select.digit-Select {
+    font-family: inherit;
+}
