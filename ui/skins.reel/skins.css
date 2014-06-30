@@ -10,7 +10,7 @@
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
-    border-top: 1px solid hsl(0, 0%, 90%);
+    border-top: 1px dotted hsl(0, 0%, 86%);
     padding-top: 0.5em;
     margin-top: 4rem;
     text-align: left;

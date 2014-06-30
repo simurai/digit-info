@@ -24,6 +24,7 @@
 .Header-title {
     color: inherit;
     font-size: 1.6em;
+    border-bottom: none;
 }
 
 
