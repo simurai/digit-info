@@ -66,12 +66,12 @@ h2 {
 h2 {
     font-size: 5vw;
     max-width: 720px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid hsl(219, 50%, 86%);
 }
-@media (min-width: 760px) { h2 { font-size: 36px; } }
-@media (max-width: 400px) { h2 { font-size: 24px; } }
+@media (min-width: 760px) { h2 { font-size: 48px; } }
+@media (max-width: 400px) { h2 { font-size: 36px; } }
 
 h3 {
     font-size: 1.2em;
@@ -142,22 +142,29 @@ h1 .Icon {
 
 /* Sections -------------------------------------------- */
 
-section {
-    margin: 4rem 0;
-    padding: 0 10px;
+section,
+footer {
+    margin: 0;
+    padding: 2rem 10px;
 }
 
 @media (min-width: 400px) {
-    section {
-        margin: 8rem 0;
-        padding: 0 20px;
+    section,
+    footer {
+        padding: 4rem 20px;
     }
 }
 @media (min-width: 760px) {
-    section {
-        margin: 12rem 0;
-        padding: 0;
+    section,
+    footer {
+        padding: 6rem 0;
     }
+}
+
+section:nth-child(odd) {
+    background: hsl(0,0%,96%);
+    border: 1px solid hsl(0, 0%, 90%);
+    border-width: 1px 0;
 }
 
 

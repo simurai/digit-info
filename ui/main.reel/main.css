@@ -32,16 +32,10 @@
     max-width: 720px;
     margin: 0 auto;
     text-align: center;
-    padding: 0 20px;
-}
-@media (min-width: 760px) {
-    .Footer {
-        padding: 0;
-    }
 }
 
 
 .Footer .Icon {
     height: 4em;
-    margin: 2rem 0 8rem 0;
+    margin: 2rem 0 0 0;
 }
