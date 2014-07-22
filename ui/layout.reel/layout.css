@@ -48,6 +48,8 @@ iframe {
     border: none; 
     resize: both;
     padding: 15px;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 iframe.is-phone {
